@@ -46,7 +46,7 @@ const nextConfig = {
       {
         "source": "/linkedin",
         "destination": "https://www.linkedin.com/in/calicastle/",
-        "permanent": false
+        "permanent": true
       },
       {
         "source": "/github",
