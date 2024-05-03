@@ -35,7 +35,7 @@ const nextConfig = {
       },
       {
         "source": "/youtube",
-        "destination": "https://youtube.com/@calicastle",
+        "destination": "https://www.youtube.com/@kuzen26",
         "permanent": true
       },
       {
