@@ -25,12 +25,12 @@ const nextConfig = {
     return [
       {
         "source": "/twitter",
-        "destination": "https://x.com/thecalicastle",
+        "destination": "https://twitter.com/kuzenLu",
         "permanent": true
       },
       {
         "source": "/x",
-        "destination": "https://x.com/thecalicastle",
+        "destination": "https://twitter.com/kuzenLu",
         "permanent": true
       },
       {
