@@ -40,7 +40,7 @@ const nextConfig = {
       },
       {
         "source": "/tg",
-        "destination": "https://t.me/cali_so",
+        "destination": "https://t.me/kuzen26",
         "permanent": true
       },
       {
