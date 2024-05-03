@@ -46,16 +46,16 @@ const nextConfig = {
       {
         "source": "/linkedin",
         "destination": "https://www.linkedin.com/in/calicastle/",
-        "permanent": true
+        "permanent": false
       },
       {
         "source": "/github",
-        "destination": "https://github.com/CaliCastle",
+        "destination": "https://github.com/chumen-Lu",
         "permanent": true
       },
       {
         "source": "/bilibili",
-        "destination": "https://space.bilibili.com/8350251",
+        "destination": "https://space.bilibili.com/320648841",
         "permanent": true
       }
     ]
