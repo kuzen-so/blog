@@ -1,5 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 'use client'
-
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
@@ -45,8 +45,8 @@ export function Photos({ photos }: { photos: string[] }) {
             className="relative h-40 flex-none shrink-0 snap-start overflow-hidden rounded-xl bg-zinc-100 ring-2 ring-lime-800/20 dark:bg-zinc-800 dark:ring-lime-300/10 md:h-72 md:rounded-3xl"
             animate={{
               width,
-              opacity: isCompact ? 1 : 0.85,
-              filter: isCompact ? 'grayscale(0)' : 'grayscale(0.5)',
+              opacity: isCompact ? 1.0 : 0.9,
+              filter: isCompact ? 'grayscale(0)' : 'grayscale(0.15)',
               rotate: idx % 2 === 0 ? 2 : -1,
             }}
             whileHover={
@@ -67,7 +67,7 @@ export function Photos({ photos }: { photos: string[] }) {
               height={500}
               sizes="(min-width: 640px) 18rem, 11rem"
               className="pointer-events-none absolute inset-0 h-full w-full select-none object-cover"
-              priority
+              unoptimized
             />
           </motion.div>
         ))}
