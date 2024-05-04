@@ -118,7 +118,7 @@ export async function Footer() {
               <p className="text-sm text-zinc-500/80 dark:text-zinc-400/80">
                 &copy; {new Date().getFullYear()} Kuzen • <strong>Fork 自</strong>
                 <PeekabooLink href="https://github.com/CaliCastle/cali.so">
-                  GitHub
+                  cali.so
                 </PeekabooLink>
               </p>
               <Links />
