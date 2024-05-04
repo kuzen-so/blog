@@ -96,11 +96,11 @@ export function Headline() {
           delay: 0.25,
         }}
       >
-        <SocialLink
+         <SocialLink
           href="https://twitter.com/kuzenLu"
           aria-label="我的推特"
           platform="twitter"
-        />
+        />  
         <SocialLink
           href="https://www.youtube.com/@kuzen26"
           aria-label="我的 YouTube"
