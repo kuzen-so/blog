@@ -10,7 +10,7 @@ function Developer() {
   return (
     <span className="group">
       <HammerIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      创意专家
+      创意师
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
     </span>
   )
@@ -25,7 +25,7 @@ function Designer() {
         <span className="absolute -bottom-[3.5px] -left-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
         <span className="absolute -right-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
       </span>
-      原画师
+      设计师
     </span>
   )
 }
@@ -43,7 +43,7 @@ function Founder() {
   return (
     <span className="group inline-flex items-center">
       <BulbIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>学习者</span>
+      <span>独立开发</span>
     </span>
   )
 }
@@ -94,28 +94,28 @@ export function Headline() {
           delay: 0.25,
         }}
       >
-        <SocialLink
-          href="https://cali.so/twitter"
+          <SocialLink
+          href="/twitter"
           aria-label="我的推特"
           platform="twitter"
-        />
-        <SocialLink
+        /> 
+       {/*  <SocialLink
           href="https://cali.so/youtube"
           aria-label="我的 YouTube"
           platform="youtube"
-        />
+        />*/}
         <SocialLink
-          href="https://cali.so/bilibili"
+          href="/bilibili"
           aria-label="我的 Bilibili"
           platform="bilibili"
         />
         <SocialLink
-          href="https://cali.so/github"
+          href="/github"
           aria-label="我的 GitHub"
           platform="github"
         />
         <SocialLink
-          href="https://cali.so/tg"
+          href="/tg"
           aria-label="我的 Telegram"
           platform="telegram"
         />
