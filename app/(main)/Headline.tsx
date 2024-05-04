@@ -10,7 +10,7 @@ function Developer() {
   return (
     <span className="group">
       <HammerIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      创意师
+      创意开发
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
     </span>
   )
@@ -99,16 +99,16 @@ export function Headline() {
           aria-label="我的推特"
           platform="twitter"
         /> 
-       {/*  <SocialLink
-          href="https://cali.so/youtube"
-          aria-label="我的 YouTube"
-          platform="youtube"
-        />*/}
         <SocialLink
           href="/bilibili"
           aria-label="我的 Bilibili"
           platform="bilibili"
         />
+        {/*  <SocialLink
+          href="https://cali.so/youtube"
+          aria-label="我的 YouTube"
+          platform="youtube"
+         /> */}
         <SocialLink
           href="/github"
           aria-label="我的 GitHub"
