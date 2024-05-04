@@ -44,21 +44,21 @@ export default function Layout({
               />
               <Text className="text-center">
                 <Link
-                  href="https://cali.so"
+                  href="https://kuzen.top"
                   className="text-zinc-700 underline"
                 >
-                  <strong>Cali Castle</strong>
+                  <strong>Kuzen</strong>
                 </Link>
                 <br />
-                开发者、设计师、细节控、创始人
+                开发者、设计师、原画师、细节控
               </Text>
               <Text className="text-center">
                 <Link
-                  href="https://cali.so/twitter"
+                  href="https:/twitter"
                   className="text-xs text-zinc-600 underline"
                 >
                   Twitter
-                </Link>{' '}
+               {/* </Link>{' '}
                 |&nbsp;
                 <Link
                   href="https://cali.so/youtube"
@@ -66,16 +66,16 @@ export default function Layout({
                 >
                   YouTube
                 </Link>{' '}
-                |&nbsp;
+                |&nbsp; */}
                 <Link
-                  href="https://cali.so/github"
+                  href="/github"
                   className="text-xs text-zinc-600 underline"
                 >
                   GitHub
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://cali.so/bilibili"
+                  href="/bilibili"
                   className="text-xs text-zinc-600 underline"
                 >
                   哔哩哔哩
