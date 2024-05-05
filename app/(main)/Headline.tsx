@@ -3,7 +3,8 @@
 import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 
-import { CometIcon, BulbIcon, HammerIcon } from '~/assets'
+import { SparkleIcon, UserSecurityIcon } from '~/assets'
+import { PeekabooLink } from '~/components/links/PeekabooLink'
 import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
