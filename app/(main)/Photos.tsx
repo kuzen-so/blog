@@ -1,54 +1,77 @@
+/* eslint-disable @next/next/no-img-element */
+'use client'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 
-import { BriefcaseIcon } from '~/assets'
+export function Photos({ photos }: { photos: string[] }) {
+  const [width, setWidth] = React.useState(0)
+  const [isCompact, setIsCompact] = React.useState(false)
+  const expandedWidth = React.useMemo(() => width * 1.38, [width])
 
-type Resume = {
-  company: string
-  title: string
-  start: string
-  end?: string | null
-  logo: string
-}
+  React.useEffect(() => {
+    const handleResize = () => {
+      // 640px is the breakpoint for md
+      if (window.innerWidth < 640) {
+        setIsCompact(true)
+        return setWidth(window.innerWidth / 2 - 64)
+      }
 
-export function Resume({ resume }: { resume: Resume[] }) {
+      setWidth(window.innerWidth / photos.length - 4 * photos.length)
+    }
+
+    window.addEventListener('resize', handleResize)
+    handleResize()
+
+    return () => {
+      window.removeEventListener('resize', handleResize)
+    }
+  }, [photos.length])
+
   return (
-    <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40">
-      <h2 className="flex items-center text-sm font-semibold text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-5 w-5 flex-none" />
-        <span className="ml-2">工作经历</span>
-      </h2>
-      <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
-          <li key={roleIndex} className="flex gap-4">
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-              <Image
-                src={role.logo}
-                alt={role.company}
-                className="h-8 w-8 rounded-full"
-                width={100}
-                height={100}
-                unoptimized
-              />
-            </div>
-            <dl className="flex flex-auto flex-wrap gap-x-2">
-              <dt className="sr-only">公司</dt>
-              <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                {role.company}
-              </dd>
-              <dt className="sr-only">职位</dt>
-              <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-                {role.title}
-              </dd>
-              <dt className="sr-only">日期</dt>
-              <dd className="ml-auto text-xs text-zinc-500/80 dark:text-zinc-400/80">
-                {role.start}
-                <span aria-hidden="true">—</span> {role.end ?? '至今'}
-              </dd>
-            </dl>
-          </li>
+    <motion.div
+      className="mt-16 sm:mt-20"
+      initial={{ opacity: 0, scale: 0.925, y: 16 }}
+      animate={{ opacity: 1, scale: 1, y: 0 }}
+      transition={{
+        delay: 0.5,
+        type: 'spring',
+      }}
+    >
+      <div className="-my-4 flex w-full snap-x snap-proximity scroll-pl-4 justify-start gap-4 overflow-x-auto px-4 py-4 sm:gap-6 md:justify-center md:overflow-x-hidden md:px-0">
+        {photos.map((image, idx) => (
+          <motion.div
+            key={idx}
+            className="relative h-40 flex-none shrink-0 snap-start overflow-hidden rounded-xl bg-zinc-100 ring-2 ring-lime-800/20 dark:bg-zinc-800 dark:ring-lime-300/10 md:h-72 md:rounded-3xl"
+            animate={{
+              width,
+              opacity: isCompact ? 1.0 : 0.9,
+              filter: isCompact ? 'grayscale(0)' : 'grayscale(0.15)',
+              rotate: idx % 2 === 0 ? 2 : -1,
+            }}
+            whileHover={
+              isCompact
+                ? {}
+                : {
+                    width: expandedWidth,
+                    opacity: 1,
+                    filter: 'grayscale(0)',
+                  }
+            }
+            layout
+          >
+            <Image
+              src={image}
+              alt=""
+              width={500}
+              height={500}
+              sizes="(min-width: 640px) 18rem, 11rem"
+              className="pointer-events-none absolute inset-0 h-full w-full select-none object-cover"
+              unoptimized
+            />
+          </motion.div>
         ))}
-      </ol>
-    </div>
+      </div>
+    </motion.div>
   )
 }
