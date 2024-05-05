@@ -1,6 +1,6 @@
 // ~/assets/icons/DesignerIcon/index.ts
 
-import { type IconProps } from '~/assets'
+import { IconProps } from '~/assets'
 
 export function DesignerIcon(props: IconProps = {}) {
   return (
@@ -16,3 +16,5 @@ export function DesignerIcon(props: IconProps = {}) {
     </svg>
   )
 }
+
+export default DesignerIcon;
