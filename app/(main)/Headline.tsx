@@ -106,17 +106,17 @@ export function Headline() {
           aria-label="我的推特"
           platform="twitter"
         />
-        <SocialLink href="/github" aria-label="我的 GitHub" platform="github" />
-        <SocialLink href="/tg" aria-label="我的 Telegram" platform="telegram" />
         <SocialLink
-          href="/bilibili"
-          aria-label="我的 Bilibili"
-          platform="bilibili"
-        />
-        <SocialLink
-          href="/youtube"
+          href="https://www.youtube.com/@kuzen26"
           aria-label="我的 YouTube"
           platform="youtube"
+        />
+        <SocialLink href="https://github.com/chumen-Lu" aria-label="我的 GitHub" platform="github" />
+        <SocialLink href="https://t.me/kuzen26" aria-label="我的 Telegram" platform="telegram" />
+        <SocialLink
+          href="https://space.bilibili.com/320648841"
+          aria-label="我的 Bilibili"
+          platform="bilibili"
         />
         <SocialLink
           href="mailto:xiaokundaa@gmail.com"
