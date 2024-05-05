@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: seo.title,
   },
   description: seo.description,
-  keywords: 'Kuzen,,开发者,设计师,OC,油画,创新,细节控,独立开发',
+  keywords: 'Kuzen,开发者,设计师,OC,油画,创新,细节控,独立开发',
   manifest: '/site.webmanifest',
   robots: {
     index: true,
