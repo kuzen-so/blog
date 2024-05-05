@@ -102,7 +102,7 @@ export function Headline() {
         }}
       >
        <SocialLink
-          href="https://cali.so/twitter"
+          href="https://twitter.com/kuzenLu"
           aria-label="我的推特"
           platform="twitter"
         />
