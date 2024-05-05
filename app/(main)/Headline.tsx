@@ -123,7 +123,7 @@ export function Headline() {
           aria-label="我的邮箱"
           platform="mail"
         />
-        <SocialLink href="https://www.kuzen.top/" platform="rss" aria-label="RSS 订阅" />
+        <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
       </motion.div>
     </div>
   )
