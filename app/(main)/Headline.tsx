@@ -10,7 +10,7 @@ function Developer() {
   return (
     <span className="group">
       <HammerIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      产品匠
+      开发者
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
     </span>
   )
@@ -37,7 +37,7 @@ function OCD() {
   return (
     <span className="group inline-flex items-center">
       <CometIcon className="mr-2 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      <span>细节控</span>
+      <span>偏完美主义</span>
     </span>
   )
 }
@@ -46,7 +46,7 @@ function Founder() {
   return (
     <span className="group inline-flex items-center">
       <BulbIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>独立创客</span>
+      <span>独立开发</span>
     </span>
   )
 }
@@ -83,8 +83,8 @@ export function Headline() {
         }}
       >
         <Balancer>
-          🔖 <b>Hi，我是5km！</b>
-          自认为是独立创客，在探寻极简创业之道，致力于持续创造出优秀作品，目前专注于桌面应用开发。我热爱开发（软件或硬件）和设计🔥，喜欢创新和探索新事物，期待与大家有深度的交流📮。
+          🔖 <b>Hi，我是Kuzen！</b>
+          是从设计转码的前端开发者致力于成为一名优秀的前端设计师,我热爱开发和设计🔥，喜欢创新和探索新事物，期待与大家带有意思的交流📮。
         </Balancer>
       </motion.p>
       <motion.div
