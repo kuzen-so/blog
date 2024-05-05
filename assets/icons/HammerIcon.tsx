@@ -1,8 +1,8 @@
-// ~/assets/icons/DesignerIcon.tsx
+// ~/assets/icons/HammerIcon.tsx
 
-import { type IconProps } from '~/assets'
+import { type IconProps } from '~/assets'; // 确保路径是正确的
 
-export function DesignerIcon(props: IconProps = {}) {
+export function HammerIcon(props: IconProps = {}) {
   return (
     <svg
       width="1em"
