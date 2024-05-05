@@ -6,16 +6,6 @@ import Balancer from 'react-wrap-balancer'
 import { BulbIcon, CometIcon, DesignerIcon, HammerIcon } from '~/assets'
 import { SocialLink } from '~/components/links/SocialLink'
 
-function Developer() {
-  return (
-    <span className="group">
-      <HammerIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      开发者
-      <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
-    </span>
-  )
-}
-
 function Designer() {
   return (
     <span className="group relative bg-black/5 p-1 dark:bg-white/5">
@@ -33,11 +23,23 @@ function Designer() {
   )
 }
 
+function Developer() {
+  return (
+    <span className="group">
+      <span className="font-mono">&lt;</span>开发者
+      <span className="font-mono">/&gt;</span>
+      <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
+    </span>
+  )
+}
+
+
+
 function OCD() {
   return (
     <span className="group inline-flex items-center">
       <CometIcon className="mr-2 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      <span>偏完美主义</span>
+      <span>追求完美</span>
     </span>
   )
 }
@@ -84,7 +86,7 @@ export function Headline() {
       >
         <Balancer>
           🔖 <b>Hi，我是Kuzen！</b>
-          是从设计转码的前端开发者致力于成为一名优秀的前端设计师,我热爱开发和设计🔥，喜欢创新和探索新事物，期待与大家带有意思的交流📮。
+          是从设计转码的前端开发者致力于成为一名优秀的前端设计师,我热爱代码和设计🔥，喜欢创新和探索新事物，期待和大家进行有趣的交流📮。
         </Balancer>
       </motion.p>
       <motion.div
