@@ -1,4 +1,4 @@
-## Cali 个人博客网站
+## Kuzen 个人博客网站
 
 Kuzen 的个人博客网站 [https://kuzen.top/](https://kuzen.top/) 的源代码。
 
