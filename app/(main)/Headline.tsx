@@ -9,7 +9,7 @@ import { SocialLink } from '~/components/links/SocialLink'
 function Developer() {
   return (
     <span className="group">
-      <HammerIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
+      <HammerIcon className="mr-2 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
       创意开发
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
     </span>
@@ -62,9 +62,10 @@ export function Headline() {
           duration: 0.3,
         }}
       >
-        <Developer />，<Designer />，
-        <span className="block h-2" />
-        <OCD />，<Founder />
+         <Developer />• <Designer />
+        <div className="mt-4">
+          <OCD /> • <Founder />
+        </div>
       </motion.h1>
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
