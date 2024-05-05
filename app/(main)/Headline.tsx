@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
-import { BulbIcon, CometIcon, DesignerIcon, HammerIcon } from '~/assets'
+import { BulbIcon, CometIcon, HammerIcon } from '~/assets'
 import { SocialLink } from '~/components/links/SocialLink'
+
+// 导入 DesignerIcon
+import { DesignerIcon } from '~/assets/icons/DesignerIcon'
 
 function Developer() {
   return (
@@ -23,6 +26,7 @@ function Designer() {
         <span className="absolute -right-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
       </span>
       <span className="group">
+        {/* 使用 DesignerIcon 替换 HammerIcon */}
         <DesignerIcon className="ml-1 mr-2 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
         <span className='ml-1 mr-4'>设计师</span>
       </span>
