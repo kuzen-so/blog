@@ -36,10 +36,10 @@ export default function Layout({
             <Hr className="mx-0 my-[20px] h-px w-full bg-zinc-100" />
             <Section>
               <Img
-                src={`${emailConfig.baseUrl}/icon.png`}
+                src={`${emailConfig.baseUrl}/icon.svg`}
                 width="24"
                 height="24"
-                alt="Cali"
+                alt="Kuzen"
                 className="mx-auto my-0"
               />
               <Text className="text-center">
@@ -50,23 +50,23 @@ export default function Layout({
                   <strong>Kuzen</strong>
                 </Link>
                 <br />
-                开发者、设计师、原画师、细节控
+                产品匠、设计师、细节控、独立开发
               </Text>
               <Text className="text-center">
                 <Link
-                  href="https:/twitter"
+                  href="/twitter"
                   className="text-xs text-zinc-600 underline"
                 >
                   Twitter
-               {/* </Link>{' '}
+                </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://cali.so/youtube"
+                  href="/youtube"
                   className="text-xs text-zinc-600 underline"
                 >
                   YouTube
                 </Link>{' '}
-                |&nbsp; */}
+                |&nbsp;
                 <Link
                   href="/github"
                   className="text-xs text-zinc-600 underline"
