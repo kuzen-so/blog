@@ -1,6 +1,8 @@
+// ~/assets/icons/DesignerIcon.tsx
+
 import { type IconProps } from '~/assets'
 
-export function HammerIcon(props: IconProps = {}) {
+export function DesignerIcon(props: IconProps = {}) {
   return (
     <svg
       width="1em"
