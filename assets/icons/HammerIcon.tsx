@@ -1,6 +1,4 @@
-// ~/assets/icons/HammerIcon.tsx
-
-import { type IconProps } from '~/assets'; // 确保路径是正确的
+import { type IconProps } from '~/assets'
 
 export function HammerIcon(props: IconProps = {}) {
   return (
