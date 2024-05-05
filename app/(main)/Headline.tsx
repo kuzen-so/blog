@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
-import { BulbIcon, CometIcon, HammerIcon } from '~/assets'
-import { SocialLink } from '~/components/links/SocialLink'
 
+import { BulbIcon, CometIcon, HammerIcon } from '~/assets'
 // 导入 DesignerIcon
 import { DesignerIcon } from '~/assets/icons/DesignerIcon'
+import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
   return (
