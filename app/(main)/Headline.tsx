@@ -115,7 +115,7 @@ export function Headline() {
           platform="youtube"
         />
         <SocialLink
-          href="mailto:hi@5km.studio"
+          href="mailto:xiaokundaa@gmail.com"
           aria-label="我的邮箱"
           platform="mail"
         />
