@@ -48,7 +48,7 @@ function Founder() {
   return (
     <span className="group inline-flex items-center">
       <BulbIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>独立开发</span>
+      <span>疯狂学习</span>
     </span>
   )
 }
