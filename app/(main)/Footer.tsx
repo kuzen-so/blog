@@ -119,9 +119,9 @@ export async function Footer() {
                 &copy; {new Date().getFullYear()} • Kuzen 
                 •
                 <strong>Fork 自</strong>
-                <PeekabooLink href="https://github.com/CaliCastle/cali.so">
+                {/* <PeekabooLink href="https://github.com/CaliCastle/cali.so">
                   cali.so
-                </PeekabooLink>
+                </PeekabooLink> */}
               </p>
               <Links />
             </div>
