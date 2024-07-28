@@ -9,7 +9,7 @@ const NewReplyCommentEmail = ({
   postLink = 'https://kuzen.top',
   postTitle = '测试文章 Lorem ipsum dolor sit amet, consectetur adipisicing elit',
   postImageUrl = 'https://cn.zolplay.com/api/og?title=测试文章',
-  userFirstName = 'Cali',
+  userFirstName = 'kuzen',
   userLastName = 'Castle',
   userImageUrl = 'https://kuzen.top/icon.png',
   commentContent = '*测试评论*\n- Wow wtf\n- Cool',
