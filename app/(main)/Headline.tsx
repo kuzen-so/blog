@@ -85,8 +85,12 @@ export function Headline() {
         }}
       >
         <Balancer>
-          🔖 <b>Hi，我是Kuzen！</b>
-          是从设计转码的前端开发者致力于成为一名优秀的前端设计师,我热爱代码和设计🔥，喜欢创新和探索新事物，期待和大家进行有趣的交流📮。
+          🔖 <b> Hi, 我是Kuzen!</b><br />
+          🚀 创新型前端开发专家 | 用户体验设计师<br />
+          {/* 💻 将复杂需求转化为直观界面的专家<br /> */}
+          🎨 融合技术与设计，打造卓越Web体验<br />
+          🔥 持续探索前沿技术，推动Web极限<br />
+          🌟 Let's craft the future of the web together!
         </Balancer>
       </motion.p>
       <motion.div
