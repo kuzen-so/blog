@@ -12,7 +12,8 @@ export async function GET() {
     site_url: "https://www.kuzen.top/", //更新网站URL
     feed_url: "https://www.kuzen.top/feed.xml", // 更新RSS feed的URL
     language: 'zh-CN',
-    image_url: "../../apple-icon.png",
+    image_url: `${seo.url.href}opengraph-image.png`,
+    // image_url: "../../apple-icon.png",
     generator: 'PHP 9.0',
   })
 
