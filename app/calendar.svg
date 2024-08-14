@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" onload="init()" aria-label="Calendar" role="img" viewBox="0 0 512 512">
+  <!-- 内联JavaScript代码，用于动态设置日期、星期和月份 -->
+  <script type="text/ecmascript">
+    <![CDATA[
+      function init() {
+        // 使用const声明常量，表示当前时间和地区
+        const time = new Date(); // 获取当前日期和时间
+        const locale = "en-gb";  // 设置地区为英国，控制日期格式
+
+        // 获取并设置日历显示的日期、星期几和月份
+        document.getElementById("day").textContent = time.getDate(); // 获取当前日期 (天数)
+        document.getElementById("weekday").textContent = time.toLocaleString(locale, { weekday: "long" }); // 获取完整星期几名称
+        document.getElementById("month").textContent = time.toLocaleString(locale, { month: "short" }).toUpperCase(); // 获取简写月份并转为大写
+      }
+    ]]>
+  </script>
+
+  <!-- 绘制日历的背景框 -->
+  <path d="M512 455c0 32-25 57-57 57H57c-32 0-57-25-57-57V128c0-31 25-57 57-57h398c32 0 57 26 57 57z" fill="#e0e7ec"/>
+  <!-- 绘制日历顶部的红色横条 -->
+  <path d="M484 0h-47c2 4 4 9 4 14a28 28 0 1 1-53-14H124c3 4 4 9 4 14A28 28 0 1 1 75 0H28C13 0 0 13 0 28v157h512V28c0-15-13-28-28-28z" fill="#dd2f45"/>
+
+  <!-- 绘制顶部装饰圆点 -->
+  <g fill="#f3aab9">
+    <circle cx="470" cy="142" r="14"/>
+    <circle cx="470" cy="100" r="14"/>
+    <circle cx="427" cy="142" r="14"/>
+    <circle cx="427" cy="100" r="14"/>
+    <circle cx="384" cy="142" r="14"/>
+    <circle cx="384" cy="100" r="14"/>
+  </g>
+
+  <!-- 显示月份，初始显示为AUG -->
+  <text id="month" x="32" y="164" fill="#fff" font-family="monospace" font-size="140px">AUG</text>
+  <!-- 显示日期，初始显示为14 -->
+  <text id="day" x="256" y="400" fill="#66757f" font-family="monospace" font-size="256px" text-anchor="middle">14</text>
+  <!-- 显示星期几，初始显示为Wednesday -->
+  <text id="weekday" x="256" y="480" fill="#66757f" font-family="monospace" font-size="64px" text-anchor="middle">Wednesday</text>
+</svg>
